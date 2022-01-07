@@ -12,15 +12,15 @@ const From = (props) => {
   const [country, setCountry] = useState(props?.showFromdatas?.Country);
 
   //submitForm
-  const submitForm = () => {
-    // console.log(company, contact, country);
-    const saveObj = {
-      Company: company,
-      Contact: contact,
-      Country: country,
-    };
-    props.saveformprops(saveObj);
-  };
+  // const submitForm = () => {
+  //   // console.log(company, contact, country);
+  //   const saveObj = {
+  //     Company: company,
+  //     Contact: contact,
+  //     Country: country,
+  //   };
+  //   props.saveformprops(saveObj);
+  // };
   return (
     <form>
       <label htmlFor="fname">Company:</label>
@@ -50,7 +50,7 @@ const From = (props) => {
         value={country}
       />
       <br /> <br />
-      <input type="button" value="Submit" onClick={submitForm} />
+      {/* <input type="button" value="Submit" onClick={submitForm} /> */}
       <input type="button" value="close" onClick={closeForm} />
       <br /> <br />
     </form>

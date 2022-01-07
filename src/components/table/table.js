@@ -17,6 +17,9 @@ const Table = (props) => {
   //create new state for update props
   const [updateProps, setUpdateProps] = useState(props.data);
 
+  //using state for include index data in forms
+  const [formdata, setFormData] = useState();
+
   //creating function for show from
   const showfrom_fun = (showIndex) => {
     // console.log(props.data[showIndex]);
@@ -43,9 +46,6 @@ const Table = (props) => {
     setUpdateProps(updateTable);
     hidefrom_fun();
   };
-
-  //using state for include index data in forms
-  const [formdata, setFormData] = useState();
 
   return (
     <>
@@ -85,7 +85,6 @@ const Table = (props) => {
         <TD text="Mexico" />
       </tr> */}
       </table>
-      
     </>
   );
 };

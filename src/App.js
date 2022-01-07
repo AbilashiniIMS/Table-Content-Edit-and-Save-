@@ -25,7 +25,7 @@ function App() {
   return (
     <div style={{ width: '60%', margin: '30px auto' }}>
       <Table data={tableData} />
-      <TableNew data={tableData} />
+      {/* <TableNew data={tableData} /> */}
     </div>
   );
 }

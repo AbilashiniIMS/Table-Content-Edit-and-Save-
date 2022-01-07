@@ -7,11 +7,12 @@ const TD = (props) => {
     props.formShow(indexArray);
   };
 
-  const conditionRender = () => {
+  const conditionRender = () => { 
     if (props.text == 'Edit ✎') {
       return <td onClick={() => editFun(props.indexArray)}>{props.text}</td>;
     } else {
       return <td>{props.text}</td>;
+      
     }
   };
 
