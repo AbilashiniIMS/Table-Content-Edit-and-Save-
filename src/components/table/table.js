@@ -6,6 +6,8 @@ import From from './form';
 const Table = (props) => {
   // console.log(props);
 
+  const [noOfRows, setNoOfRows] = useState(1);
+
   //using state to show and hide from
   const [showFrom, setShowFrom] = useState(false);
 
@@ -83,6 +85,7 @@ const Table = (props) => {
         <TD text="Mexico" />
       </tr> */}
       </table>
+      
     </>
   );
 };

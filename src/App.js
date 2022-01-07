@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import Table from ' ./components/table/table';
+import TableNew from ' ./components/newTable/table';
 
 const tableData = [
   {
@@ -24,6 +25,7 @@ function App() {
   return (
     <div style={{ width: '60%', margin: '30px auto' }}>
       <Table data={tableData} />
+      <TableNew data={tableData} />
     </div>
   );
 }
